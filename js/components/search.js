@@ -1,8 +1,5 @@
-let inputText = document.querySelector('[name="inputText"]');
-let information = document.querySelectorAll("[data-search=true]");
 let form = document.querySelector('#search');
-let card = document.querySelectorAll('.product')
-   
+let inputText = document.querySelector('[name="inputText"]');
 
 form.addEventListener('submit', onSubmit); 
      function onSubmit(event) {
@@ -13,17 +10,22 @@ form.addEventListener('submit', onSubmit);
  
  
  function search (text) {
+  const information = document.querySelectorAll('[data-search=true]')
     for(i=0; i<information.length; i++) {
       let elem = information[i];
 
-      if(elem.textContent.includes(text)){
-        console.log(text);
-          }
-    }            
+      if(text === "") {
+        return
+      }
+
+      if(!elem.textContent.toLowerCase().includes(text.toLowerCase())){
+        elem.parentElement.parentElement.classList.add('hide');
+        }
+        else{
+          elem.parentElement.parentElement.classList.remove('hide');
+        }
+    }    
+           
   }
 
 
- 
-
-  
-    

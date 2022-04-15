@@ -69,7 +69,6 @@ function ProductsList() {
     articles.push(articleElem);
     }
     sectionElem.append(...articles);
-    console.log(articles)
   });
 
  return sectionElem;
