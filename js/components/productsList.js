@@ -38,6 +38,7 @@ function ProductsList() {
     
     let name = document.createElement('h3');
     name.textContent = `${prod.name}`;
+    name.setAttribute('data-search', true)
     
     let price = document.createElement('div');
     price.classList.add("price");
@@ -47,6 +48,7 @@ function ProductsList() {
     let currentPrice = document.createElement('p');
     currentPrice.textContent = `${prod.price.current} руб.`;
     currentPrice.classList.add("current");
+    currentPrice.setAttribute('data-search', true)
     
     let choice = document.createElement('div');
     choice.classList.add("choice");

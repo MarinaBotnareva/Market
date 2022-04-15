@@ -1,5 +1,5 @@
 function App() {
-  return [ Header(), Main()];
+  return [Header(), Main()];
 }
 
 document.body.append(...App());
