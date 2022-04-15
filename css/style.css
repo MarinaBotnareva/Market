@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+ font-family: 'PT Sans', sans-serif;
+ 
+}
+
+h3{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 28px 0;
+}
+
+#popular {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  padding: 30px 0;
+  width: 358px;
+  height: 490px;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px; 
+}
+
+.product .hide{
+  display: none; 
+ }
+
+.price {
+  display: flex;
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+  padding: 12px 0 22px 0;
+}
+
+.old {
+  font-weight: 700;
+  font-size: 18px;
+  color: #BDBDBD;
+  text-decoration-line: line-through;
+  margin: 0 6px 0 0;
+}
+
+.current {
+  font-weight: 700;
+  font-size: 25px;
+  color: #000;
+  margin: 0 0 0 6px;
+}
+
+.info {
+  width: 284px;
+  height: 416px;
+  position: relative;
+}
+
+img{
+  width: 100%;
+  height: 214px;
+}
+
+.buy {
+  padding: 15px 67px;
+  border: 1px solid #384685;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-right: 32px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  padding: 17px 0;
+
+}
+
+.best{
+  width: 63px;
+  height: 30px;
+  border-radius: 5px;
+  background: #0E9F2E;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 3px 0;
+  margin: 0 0 0 15px;
+  z-index: 3;
+  
+}
+
+.ancer{
+  display: flex;
+  position: absolute;
+  top: -12px;
+  left: -15px;
+}
+
+.sale1{
+  position: absolute;
+  top: 5px;
+  left: 12px;
+  color: #fff;
+}
+
+
+/* меню */
+a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.nav-item {
+  list-style: none;
+  padding: 1rem 2rem 1rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 65px;
+}
+
+/* поиск */
+.card {
+  width: 150px;
+  height: 120px;
+  border:1px solid black;
+  margin: 10px;
+  
+}
+
+.card .hide{
+ display: none; 
+}
