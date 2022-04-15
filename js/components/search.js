@@ -21,9 +21,7 @@ form.addEventListener('submit', onSubmit);
       if(!elem.textContent.toLowerCase().includes(text.toLowerCase())){
         elem.parentElement.parentElement.classList.add('hide');
         }
-        else{
-          elem.parentElement.parentElement.classList.remove('hide');
-        }
+       
     }    
            
   }
