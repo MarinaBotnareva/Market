@@ -1,6 +1,5 @@
 function counterFav () {
     const favorite = JSON.parse(localStorage.getItem('favorite'));
-    console.log(favorite)
     let nav = document.querySelector('.fav');
     let sum = Object.keys(favorite).length;
     nav.textContent = sum;  

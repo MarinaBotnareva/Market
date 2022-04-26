@@ -1,14 +1,18 @@
-const cartCont = document.createElement('main');
+const cartCont = document.createElement('section');
 let cartData = JSON.parse(localStorage.getItem('cart')); 
 
 function renderCart(){
   let list = document.createElement('div'); 
+    
   for (items in cartData) {
     let item = document.createElement('div');
+    item.classList.add('item')
     let img = document.createElement('img');
     img.src = `https://github.com/fd-freshjs/serve-json/raw/main/assets/images/mebel/${cartData[items].code}.png`;
+    img.classList.add('cartImg')
     let name = document.createElement('span');
     name.textContent = `${cartData[items].name}`;
+    name.classList.add('name');
     let minus = document.createElement('button');
     minus.textContent = `-`;
     minus.classList.add('minus')
@@ -21,9 +25,11 @@ function renderCart(){
     plus.setAttribute('data-articul', `${items}`)
     let price = document.createElement('span');
     price.textContent = `${cartData[items].price.current}` + " руб.";
+    price.classList.add('price');
     let del = document.createElement('button');
     del.textContent = `x`;
     del.setAttribute('data-articul', `${items}`)
+    del.classList.add('del')
     minus.addEventListener('click', (event) => {
       let articul = event.target.dataset['articul']
       if(cartData[articul].count === 1) {
@@ -52,11 +58,13 @@ function renderCart(){
         delete cartData[articul]
         localStorage.setItem('cart', JSON.stringify(cartData))
         counterCart ()
+        
       })
     item.append(img, name, minus, count, plus, price, del)
     list.append(item)
     
-  }  
+  } 
+  
   cartCont.append(list)
   }
 
@@ -70,6 +78,5 @@ function openCart(){
   }  
  return cartCont; 
 } 
-
-console.log(cartData)      
+   
    

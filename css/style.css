@@ -6,7 +6,6 @@
 
 body{
  font-family: 'PT Sans', sans-serif;
- 
 }
 
 h3{
@@ -81,7 +80,7 @@ img{
   background-color: #fff;
   box-sizing: border-box;
   border-radius: 5px;
-  margin-right: 32px;
+  margin-right: 16px;
   font-weight: 700;
   font-size: 20px;
 }
@@ -95,8 +94,16 @@ img{
   display: flex;
   align-items: center;
   padding: 17px 0;
-
 }
+
+.favorite {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
 
 .best{
   width: 63px;

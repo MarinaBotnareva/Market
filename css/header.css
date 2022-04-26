@@ -89,3 +89,24 @@ border-radius: 25px;
   left: 260px;
   border-radius: 50%;
 }
+
+.call {
+  width: 177px;
+  height: 35px;
+  padding: 7px auto;
+  border: 1px solid #E13B3F;
+  color: #E13B3F;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-right: 16px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.call:hover{
+  border: 1px solid #384685;
+  background-color:#384685;
+  color: #fff;
+}
+

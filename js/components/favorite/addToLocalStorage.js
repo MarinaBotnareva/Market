@@ -17,8 +17,6 @@ loadProducts().then(({ data: products }) => {
           }
         }
       }
-
-    
     }  
     
       localStorage.setItem('favorite', JSON.stringify(favorite));
